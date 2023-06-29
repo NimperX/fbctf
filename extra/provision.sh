@@ -308,7 +308,7 @@ fi
         install_nodejs
 
         log "Installing all required npm node_modules"
-        sudo npm install --prefix "$CTF_PATH"
+        sudo npm install --unsafe-perm --prefix "$CTF_PATH"
         sudo npm install -g grunt
         sudo npm install -g flow-bin
 
